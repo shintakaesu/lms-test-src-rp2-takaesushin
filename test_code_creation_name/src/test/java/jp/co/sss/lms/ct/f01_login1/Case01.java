@@ -14,6 +14,7 @@ import org.junit.jupiter.api.TestMethodOrder;
  * 結合テスト ログイン機能①
  * ケース01
  * @author holy
+ * @author 高江洲心
  */
 @TestMethodOrder(OrderAnnotation.class)
 @DisplayName("ケース01 ログイン画面への遷移")
@@ -35,7 +36,12 @@ public class Case01 {
 	@Order(1)
 	@DisplayName("テスト01 トップページURLでアクセス")
 	void test01() {
-		// TODO ここに追加
+		//トップページへアクセス
+		goTo("http://localhost:8080/lms");
+
+		//エビデンス取得
+		getEvidence(new Object() {
+		});
 	}
 
 }
